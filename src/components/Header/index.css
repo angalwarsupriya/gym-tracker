@@ -1,0 +1,8 @@
+.header-bg-con{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(33, 33, 33);
+    position: fixed;
+    top: 0;
+    
+}
