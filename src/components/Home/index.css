@@ -1,5 +1,61 @@
 .home-bg-con{
     height: 100vh;
     width: 100vw;
-    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+}
+.bottom-round-corner{
+    height: 40%;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 400px;
+    justify-self: end;
+    margin-bottom: 0px;
+}
+.home-left-con{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    justify-content: space-between;
+
+}
+.home-img-con{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fitnes-span{
+    font-size: 50px;
+    color: orangered;
+}
+.home-hea{
+    font-size: 40px;
+    font-family:  Roboto;
+}
+.home-p{
+    font-size: 17px;
+    line-height: 35px;
+    width:90%;
+    color:whitesmoke;
+}
+.home-img{
+    height: 90%;
+    width: 60%;
+}
+.content-con{
+    width: 100%;
+    margin-left: 5%;
+    justify-self: flex-start;
+}
+.get-start-btn{
+    width: 130px;
+    background-image: linear-gradient(to right, orangered,rgb(251, 79, 17), rgb(251, 98, 21), rgb(247, 174, 132));
+    margin-right:10%;
+    height: 45px;
+
 }

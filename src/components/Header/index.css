@@ -1,8 +1,153 @@
 .header-bg-con{
     height: 10vh;
     width: 100vw;
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(28, 27, 27);
     position: fixed;
     top: 0;
-    
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;  
+    padding-left: 3%; 
+    padding-right: 3%;
 }
+.header-logo{
+    font-size: 28px;
+    font-family: Bodomi MT;
+    color: white;
+}
+.nav-con{
+    height: 100%;
+    width: 52%;
+}
+.header-ul{
+    height: 100%;
+    margin: 0px;
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 14px;
+    color: whitesmoke;
+    font-family: Lucida Handwriting, cursive;
+}
+
+
+.header-list-item{
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.header-list-item::before{
+    content: " ";
+    width:2rem ;
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    background:linear-gradient(90deg,#ff4000 0%, rgb(238, 189, 163) 100%);
+    position: absolute;
+    bottom: -1.01rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+}
+
+.header-list-item:hover::before{
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.header-btn{
+    width: 130px;
+    background-color: orangered;
+    margin-right:10%;
+}
+
+/*------------------glowing btn---------------------*/
+
+.glowing-btn {
+    position: relative;
+    color: #ee4508;
+    cursor: pointer;
+    padding:5px ;
+    border: 0.15em solid #f1f0ed;
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing:0.4em ;
+    align-self: flex-start;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px #678ee8,
+      0px 0px 0.5em 0px #4da9ff;
+    -moz-box-shadow: inset 0px 0px 0.5em 0px #bd6315,
+      0px 0px 0.5em 0px #4dbbff;
+    box-shadow: inset 0px 0px 0.5em 0px #5c4dff,
+      0px 0px 0.5em 0px #7ebfeb;
+    animation: border-flicker 2s linear infinite;
+  }
+  
+
+  .glowing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: #ff884d;
+    pointer-events: none;
+  }
+  
+  .glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background: linear-gradient(to right, #ff7b00 , rgb(243, 191, 119)); 
+    box-shadow: 0 0 2em 0.2em #4662a0;
+    transition: opacity 100ms linear;
+    border-radius: 10px;
+  }
+  
+  .glowing-btn:hover {
+    color: rgba(246, 239, 239, 0.8);
+    text-shadow: none;
+    animation: none;
+  }
+  
+  .glowing-btn:hover .spaning-txt {
+    animation: none;
+  }
+  
+  .glowing-btn:hover .faulty-letter {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:before {
+    filter: blur(1.5em);
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:after {
+    opacity: 1;
+  }
+  

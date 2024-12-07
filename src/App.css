@@ -1,5 +1,7 @@
 #root {
   margin: 0 auto;
+  font-family: ;
+  
 }
 
 .home-bg-container{
@@ -9,13 +11,25 @@
   background-size: cover;
   position: fixed;
 }
+p{
+  font-family: Lucida Handwriting, cursive;
+}
+button{
+  height: 40px;
+  width: 100px;
+  font-size: 17px;
+  border-radius: 10px;
+  border:none;
+}
 .con{
   height: 150vh;
   width: 100vw;
   background-color:transparent ;
   position: relative;
- padding-top: 5%;
 }
 .display-ui-con{
   width: 100vw;
+}
+div{
+  box-sizing: border-box;
 }

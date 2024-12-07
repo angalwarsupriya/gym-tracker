@@ -1,0 +1,11 @@
+.features-bg-con{
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(2px);
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.features-hea{
+    font-size: 30px;
+    color: orangered;
+}
