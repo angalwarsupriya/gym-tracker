@@ -135,8 +135,8 @@
 }
 
 @keyframes fadeIn{
-  from{opacity:0};
-  to{opacity:1};
+  from{opacity:0;}
+  to{opacity:1;}
 }
 
 /***************************************/
@@ -221,8 +221,7 @@ content: '';
   transform: translate(-50%, -50%);
   animation: ring 1.5s infinite;
 }
-
-.button:hover::after, 
+ 
 .button:focus::after {
   animation: none;
   display: none;
@@ -237,6 +236,5 @@ content: '';
   100% {
     width: 300px;
     height: 300px;
-    opacity: 0;
   }
 }

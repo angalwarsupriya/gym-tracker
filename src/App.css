@@ -7,7 +7,6 @@
 .home-bg-container{
   height: 100vh;
   width: 100vw;
-  background-image: url('images/woman-holding-weights-near-barbells.jpg');
   background-size: cover;
   position: fixed;
 }
