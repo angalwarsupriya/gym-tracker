@@ -9,6 +9,7 @@
     justify-content: space-between;  
     padding-left: 3%; 
     padding-right: 3%;
+    z-index: 30;
 }
 .header-logo{
     font-size: 28px;
@@ -151,3 +152,8 @@
     opacity: 1;
   }
   
+  /****************************/
+ a{
+  color: white;
+  text-decoration: none;
+ }

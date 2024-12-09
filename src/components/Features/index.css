@@ -11,10 +11,17 @@
 .features-hea{
     font-size: 35px;
     color: orangered;
+    margin-bottom: 30px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.features-hea:hover{
+    font-size: 38px;
 }
 .features-para{
-    font-size: 18px;
+    font-size: 20px;
     width: 60%;
+    line-height: 35px;
 }
 .features-cards-con{
     height: 70%;
@@ -61,6 +68,7 @@
     background-color: rgb(26, 25, 25);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    padding: 4%;
 }
 .feature-card-content-con2{
     height: 310px;
@@ -69,6 +77,20 @@
     background-color: rgb(60, 58, 58);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    padding: 4%;
+
+}
+.go-btn{
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    color: orangered;
+    margin-top: 25px;
+    font-weight: bolder;
+    border: 3px solid rgb(238, 89, 35);
 }
 .feature-card-hea{
     color: orangered;
@@ -76,6 +98,10 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .feature-card-para{
-    line-height: 29px;
+    font-size: 17px;
+    line-height: 35px;
 }
 
+/* src/button-animation.scss */ .go-btn { padding: 10px 20px; font-size: 16px; background-color: #ece8e8; color: rgb(249, 72, 7); border: none; border-radius: 5px; cursor: pointer; position: relative; overflow: hidden; transition: transform 0.3s ease; &:hover { transform: scale(1.1);
+     color: 'white'; } 
+     &::before { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, #f34805 0%, #f3aa00 100%); transition: height 0.3s ease; z-index: -1; height: 0; } &:hover::before { height: 100%;}}

@@ -1,5 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 .guide-bg-con{
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 150vh;
     width: 100vw;
-    background-color: rgb(30, 97, 156);
+   background-color:black;
+   padding-top: 2%;
+   padding-bottom: 2%;
+   padding-right: 3%;
+   padding-left: 3%;
 }
+.step-hea{
+    font-size: 25px;
+    color: orange;
+    margin: 0px;
+    margin-top: 20px;
+    margin-left: 5px;
+
+    
+}
+.strokeme {
+    color: black;
+    text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke, -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+    margin-right: 12px;
+
+}
+.guide-cards-con{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card-overview-con{
+    height: 390px;
+    width: 30%;
+    margin-bottom: 10%;
+    margin-right: 3%;
+}
+.guide-card{
+    height: 91%;
+    width: 100%;
+    border:1px solid rgb(240, 238, 238);
+    border-radius: 20px;
+    background-size: cover;
+}
+
+/*-----------------------card animation------------------------*/
+
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+ 
+  .image {
+    width: 100%;
+    height: 100%; 
+    border-radius: 20px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    margin: 0px;
+    border-radius: 20px;
+    padding: 0px;
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+    height: 100%;
+  }
+  .GUIDE-HEA{
+    color: orangered;
+    font-size: 35px;
+    margin-bottom: 70px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+  }
+  .GUIDE-HEA:hover { font-size: 40px;}
+  .text {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: wrap;
+    text-align: center;
+    width: 90%;
+    line-height: 35px;
+  }
+.know-more-btn{
+    background-color: orangered;
+    position: relative;
+    top: 75%;
+    left: 35%;
+}
+
+
+/*******************************/
+
+
+

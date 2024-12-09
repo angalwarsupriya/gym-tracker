@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 import './index.css'
 
 function Header() {
@@ -8,17 +8,21 @@ function Header() {
       <h1 className='header-logo'>GymFluencer</h1>
       <nav className='nav-con'>
         <ul className='header-ul'>
+          
           <li className='header-list-item'>
-            Home
+            <a href='#home'>Home</a>           
           </li>
+         
+          
           <li className='header-list-item'>
-            Features
+          <a href='#features'>Features</a>   
           </li>
           <li className='header-list-item'>
             Deit Plan
           </li>
           <li className='header-list-item'>
-             Guide
+           
+             <a href='#guide'>Guide</a>   
           </li>
           <li className='header-list-item'>
             Workout Plans
@@ -27,7 +31,7 @@ function Header() {
             Blog
           </li>
           <li className='header-list-item'>
-            FAQs
+          <a href='#faqs'>FAQs</a>   
           </li>
           <li className='header-list-item'>
             Contact

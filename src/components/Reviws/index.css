@@ -1,5 +1,79 @@
 .reviews-bg-con{
     height: 100vh;
-    width: 100vw;
-    background-color: orange;
+    width: 95vw;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.review-card-con{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgba(239, 212, 11, 0.874);
+}
+.review-card{
+    height: 35%;
+    width: 40%;
+    background-color: rgb(31, 30, 32);
+    border-radius: 20px;
+    margin-right: 5%;
+}
+.review-card-top{
+    height: 25%;
+    width: 100%;
+    background-color: rgb(252, 248, 247);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 0px;
+    padding: 15px;
+}
+.review-card-hea{
+    font-size: 25px;
+    color: #e83504;
+    margin: 0px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+.review-card-hea:hover{
+    font-size: 24px; /* Bigger font size on hover */ color: #0070f3; /* Change text color on hover (optional) */
+}
+.review-card-p{
+    font-size: 17px;
+    color: whitesmoke;
+    margin-left: 10px;
+    margin-top: 20px;
+    line-height: 35px;
+}
+.start-row{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.review-hea{
+    color: aliceblue;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.review-span{
+    font-size: 37px;
+    color: #e82604;
+    text-decoration:underline;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+.review-span:hover{
+    font-size: 42px;
+}
+
+
+/*****************************************************************/
+
+/* src/hover-animation.scss */
+.review-card { 
+ transition: transform 1s ease-in-out; 
+ position: relative; overflow: hidden; 
+} 
+.review-card:hover { 
+    transform: scale(1.2); /* Scale up the review-card */ 
+    height: 43%;
+    width: 38;
 }
